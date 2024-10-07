@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>文章编辑页面</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./wangedit/wangEdit.css" />
+    <script src="./wangedit/wangEdit.js"></script>
+    <style>
+      #editor—wrapper {
+        border: 1px solid #ccc;
+        z-index: 100; /* 按需定义 */
+      }
+      #toolbar-container {
+        border-bottom: 1px solid #ccc;
+      }
+      #editor-container {
+        height: 300px;
+      }
+    </style>
+  </head>
+
+  <body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight article">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="ibox">
+            <div class="ibox-content">
+              <div class="pull-right">
+                <button class="btn btn-white btn-xs" type="button">
+                  700BIKE
+                </button>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputName2">文章标题</label>
+                <input
+                  type="text"
+                  class="form-control title-ipt"
+                  value="自行车都智能化了，你可知道它的历史？"
+                  id="exampleInputName2"
+                />
+              </div>
+
+              <p>文章内容</p>
+              <div id="editor—wrapper">
+                <div id="toolbar-container"><!-- 工具栏 --></div>
+                <div id="editor-container">
+                  <!-- 编辑器 -->
+                </div>
+              </div>
+
+              <div class="row" >
+                <button type="button" name="" id="" class="save btn btn-primary" btn-lg btn-block">保存</button>
+              </div>
+
+              <hr />
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2>评论：</h2>
+                  <div class="com-list">
+                    <!-- <div class="social-feed-box">
+                      <div class="social-avatar">
+                        <a href="default.htm" class="pull-left">
+                          <img alt="image" src="img/a1.jpg" />
+                        </a>
+                        <div class="media-body">
+                          <a href="#"> 逆光狂胜蔡舞娘 </a>
+                          <small class="text-muted">17 小时前</small>
+                        </div>
+                      </div>
+                      <div class="social-body">
+                        <p>好东西，我朝淘宝准备跟进，1折开卖</p>
+                      </div>
+                      <div class="social-footer">
+                        <button type="button" class="btn btn-danger">删除</button>
+                      </div>
+                    </div> -->
+                  </div>
+         
+                </div>
+              </div>
+              
+              <div class="row ">
+                <div class="col-lg-12">
+                  <div class="panel  panel-success">
+                    <div class="panel-heading">发布评论</div>
+
+                    <div class="panel-body">
+                      <div class="form-inline">
+                        <div class="form-group">
+                          <label for="exampleInputName2">请输入您的评论</label>
+                          <input type="text" class="form-control send-ipt" id="exampleInputName2" placeholder="请输入您的评论">
+                        </div>
+                    
+                        <button type="submit" class="btn btn-danger send-btn">发布</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./js/plugins/layer/layer.min.js"></script>
+    <script src="./wangedit-config.js"></script>
+
+    <script src="./request.js"></script>
+    <script src="./blog-edit.js"></script>
+
+    <script>
+    
+    </script>
+  </body>
+</html>
